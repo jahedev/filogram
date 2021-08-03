@@ -1,0 +1,54 @@
+header {
+  width: 100vw;
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid var(--grey-219);
+}
+
+.center-middle {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filogram-logo img {
+  max-height: 35px;
+  width: auto;
+}
+
+.search-bar input:not(:focus)::placeholder {
+  text-align: center;
+}
+
+.search-bar input:focus {
+  padding-left: 30px;
+}
+
+.search-bar input {
+  background-color: var(--grey-250);
+  border: solid 1px var(--grey-219);
+  border-radius: 5px;
+  min-width: 200px;
+  font-size: 0.8rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-icon {
+}
+
+.header-icon svg {
+  font-size: 130%;
+  margin-right: 20px;
+  cursor: pointer;
+}
