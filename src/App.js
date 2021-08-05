@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {
   HomeOutlined,
   HomeFilled,
@@ -17,14 +17,14 @@ import {
   SaveOutlined,
   SaveFilled,
   SmileOutlined,
-} from '@ant-design/icons'
+} from '@ant-design/icons';
 
-import logo from './assets/images/logo.png'
-import profile from './assets/images/profile.jpg'
-import profile2 from './assets/images/profile2.jpg'
-import profile3 from './assets/images/profile3.jpg'
-import profile4 from './assets/images/profile4.jpg'
-import postImg from './assets/images/post.jpg'
+import logo from './assets/images/logo.png';
+import profile from './assets/images/profile.jpg';
+import profile2 from './assets/images/profile2.jpg';
+import profile3 from './assets/images/profile3.jpg';
+import profile4 from './assets/images/profile4.jpg';
+import postImg from './assets/images/post.jpg';
 
 function App() {
   return (
@@ -58,7 +58,7 @@ function App() {
       </header>
       <main>
         <div className='center-middle'>
-          <div className='main-right'>
+          <div className='main-left'>
             <div className='stories-container'>
               <div className='story-profile'>
                 <div className='profile-outer-circle'>
@@ -186,15 +186,40 @@ function App() {
                   </div>
                   <div className='post-comment-field-right'>
                     <div className='post-comment-btn-div'>
-                      <button>Post</button>
+                      <a href='#' className='blue-btn'>
+                        Post
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='main-left'>
-            <div className='profile-switcher'></div>
+          <div className='main-right'>
+            <div className='profile-switcher'>
+              <div className='profile-switcher-left'>
+                <div className='user-profile-image'>
+                  <div className='profile-outer-circle'>
+                    <div className='profile-circle'>
+                      <img src={profile} alt='story icon' />
+                    </div>
+                  </div>
+                </div>
+                <div className='user-profile-info'>
+                  <div className='user-profile-username'>
+                    <a href='#'>jahedev</a>
+                  </div>
+                  <div className='user-profile-name'>
+                    <span>Jahed Hossain</span>
+                  </div>
+                </div>
+              </div>
+              <div className='profile-switcher-right'>
+                <a href='#' className='blue-btn'>
+                  Switch
+                </a>
+              </div>
+            </div>
             <div className='follow-suggestions'></div>
             <div className='nav-links'></div>
             <div className='copyright-statement'></div>
@@ -202,7 +227,7 @@ function App() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
