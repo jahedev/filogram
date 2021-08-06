@@ -5,7 +5,7 @@ header {
   border-bottom: 1px solid var(--grey-219);
 }
 
-.center-middle {
+header .center-middle {
   height: 100%;
   width: 70%;
   margin: auto;
