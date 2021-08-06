@@ -232,6 +232,7 @@ main .center-middle {
 
 .main-right {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 30px;
@@ -240,15 +241,15 @@ main .center-middle {
   min-width: 320px;
   overflow-y: hidden;
 }
-.profile-switcher {
+.profile-view {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: burlywood;
+  /* background-color: burlywood; */
   width: 100%;
 }
-.profile-switcher-left {
+.profile-view-left {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,15 +259,92 @@ main .center-middle {
 .user-profile-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: 16px;
 }
-.user-profile-username {
+.user-profile-username a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #494949;
+  text-decoration: none;
+  padding-left: 2px;
 }
 .user-profile-name {
+  color: rgb(143, 143, 143);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-top: 2px;
 }
-.profile-switcher-right {
+.profile-view-right {
 }
-.profile-switcher-right .blue-btn {
+.profile-view-right .blue-btn {
   font-size: 0.75rem;
+}
+
+.follow-suggestions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.follow-suggestions-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.follow-suggestions-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(143, 143, 143);
+}
+
+.follow-suggestions-all a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #494949;
+}
+
+.follow-suggestion-item {
+  padding-left: 8px;
+  margin-bottom: 12px;
+}
+
+.name-small {
+  font-size: 0.75rem;
+}
+
+.follow-suggestion-item .user-profile-username a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.nav-links {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.nav-link:not(:last-of-type)::after {
+  content: '\00B7';
+  color: rgb(190, 190, 190);
+  margin: 0 0.25em 0 0.25em;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+  font-size: 0.7rem;
+}
+
+.copyright-statement {
+  color: rgb(190, 190, 190);
+  font-size: 0.65rem;
 }
