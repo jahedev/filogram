@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './assets/css/signup.css'
 
 import logo from './assets/images/logo.png'
@@ -43,8 +45,8 @@ export default function Login() {
               />
               <input
                 type='password'
-                name='Password'
-                placeholder='password'
+                name='password'
+                placeholder='Password'
                 className='signup-input'
               />
               <br />
@@ -58,7 +60,7 @@ export default function Login() {
           <div className='form-container'>
             <div className='login-signup'>
               <span>Have an account?</span>
-              <a href='javascript:void(0);'>Log in</a>
+              <Link to='/login'>Log in</Link>
             </div>
           </div>
         </div>
