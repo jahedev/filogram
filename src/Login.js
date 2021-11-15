@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './assets/css/signup.css'
 
 import logo from './assets/images/logo.png'
@@ -49,11 +51,8 @@ export default function SignUp() {
           <div className='form-container'>
             <div className='login-signup'>
               <span>Don't have an account?</span>
-              <a href='javascript:void(0);'>Sign Up</a>
+              <Link to='/signup'>Sign Up</Link>
             </div>
-          </div>
-          <div className='suggest-app-container'>
-            <h6>Get the app.</h6>
           </div>
         </div>
       </div>
