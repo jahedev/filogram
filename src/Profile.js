@@ -26,7 +26,7 @@ import profile3 from './assets/images/profile3.jpg'
 import profile4 from './assets/images/profile4.jpg'
 import postImg from './assets/images/post.jpg'
 
-export default function Home() {
+export default function Profile() {
   return (
     <div className='App'>
       <header>
