@@ -28,7 +28,7 @@ import postImg from './assets/images/post.jpg'
 
 export default function Profile() {
   return (
-    <div className='App'>
+    <div>
       <header>
         <div className='center-middle'>
           <div className='filogram-logo'>
