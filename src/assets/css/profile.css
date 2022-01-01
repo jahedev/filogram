@@ -1,0 +1,7 @@
+.profile-top {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+}
