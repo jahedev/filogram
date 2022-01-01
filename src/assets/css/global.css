@@ -30,3 +30,7 @@ button {
 body {
   background-color: var(--grey-250);
 }
+
+.flex-column {
+  flex-direction: column;
+}

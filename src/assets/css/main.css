@@ -227,9 +227,6 @@ main .center-middle {
   height: 100%;
 }
 
-.main-left {
-}
-
 .main-right {
   display: flex;
   flex-direction: column;
@@ -241,6 +238,7 @@ main .center-middle {
   min-width: 320px;
   overflow-y: hidden;
 }
+
 .profile-view {
   display: flex;
   flex-direction: row;
@@ -347,4 +345,10 @@ main .center-middle {
 .copyright-statement {
   color: rgb(190, 190, 190);
   font-size: 0.65rem;
+}
+
+@media (max-width: 1000px) {
+  .main-right {
+    display: none;
+  }
 }
