@@ -49,3 +49,8 @@ body {
 .button:active {
   color: rgb(51, 51, 51);
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import Header from './components/base/Header'
+import FooterLarge from './components/base/FooterLarge'
 
 import profile from './assets/images/profile5.jpg'
+import media1 from './assets/images/media1.jpg'
+import media2 from './assets/images/media2.jpg'
+import media3 from './assets/images/media3.jpg'
 
 export default class Profile extends Component {
   render() {
@@ -41,8 +45,32 @@ export default class Profile extends Component {
               </div>
             </div>
             <div className='profile-bottom'>
-              <p>world</p>
+              <div className='profile-tabs'>
+                <div className='profile-tab profile-tab-active'>POSTS</div>
+                <div className='profile-tab'>SAVED</div>
+              </div>
+              <div className='profile-media'>
+                <div className='profile-media-item'>
+                  <img src={media1} alt='' />
+                </div>
+                <div className='profile-media-item'>
+                  <img src={media2} alt='' />
+                </div>
+                <div className='profile-media-item'>
+                  <img src={media3} alt='' />
+                </div>
+                <div className='profile-media-item'>
+                  <img src={media2} alt='' />
+                </div>
+                <div className='profile-media-item'>
+                  <img src={media3} alt='' />
+                </div>
+                <div className='profile-media-item'>
+                  <img src={media1} alt='' />
+                </div>
+              </div>
             </div>
+            <FooterLarge />
           </div>
         </main>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import {
   HomeOutlined,
@@ -31,9 +32,11 @@ export default function Header(props) {
   return (
     <header>
       <div className='center-middle'>
-        <div className='filogram-logo'>
-          <img src={logo} alt='' />
-        </div>
+        <Link to='/'>
+          <div className='filogram-logo'>
+            <img src={logo} alt='' />
+          </div>
+        </Link>
         <div className='search-bar'>
           <input autocapitalize='none' placeholder='Search' type='text' />
         </div>
@@ -50,9 +53,11 @@ export default function Header(props) {
           <div className='header-icon'>
             {filled.heart ? <HeartFilled /> : <HeartOutlined />}
           </div>
-          <div className='header-icon'>
-            {filled.profile ? <ProfileFilled /> : <ProfileOutlined />}
-          </div>
+          <Link to='/profile'>
+            <div className='header-icon'>
+              {filled.profile ? <ProfileFilled /> : <ProfileOutlined />}
+            </div>
+          </Link>
         </div>
       </div>
     </header>

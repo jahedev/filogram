@@ -323,11 +323,17 @@ main .center-middle {
   display: flex;
   flex-wrap: wrap;
   max-width: 300px;
-}
-
-.nav-links {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.nav-links-large {
+  max-width: 1000px;
+}
+
+.nav-links-large a {
+  font-size: 0.8rem !important;
+  color: #7e7e7e !important;
 }
 
 .nav-link:not(:last-of-type)::after {
@@ -345,6 +351,13 @@ main .center-middle {
 .copyright-statement {
   color: rgb(190, 190, 190);
   font-size: 0.65rem;
+}
+
+.copyright-large {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem !important;
+  color: #7e7e7e !important;
 }
 
 @media (max-width: 1000px) {
