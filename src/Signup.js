@@ -49,6 +49,7 @@ export default function Signup() {
                 placeholder='Password'
                 className='signup-input'
               />
+              <button type='submit'>Sign Up</button>
               <br />
               <div className='description bottom-text'>
                 By signing up, you agree to our{' '}
