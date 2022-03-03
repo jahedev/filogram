@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import Header from './components/base/Header'
 import FooterLarge from './components/base/FooterLarge'
 
+// I am using dummy static images for now
 import profile from './assets/images/profile5.jpg'
 import media1 from './assets/images/media1.jpg'
 import media2 from './assets/images/media2.jpg'
 import media3 from './assets/images/media3.jpg'
+import ProfileMediaItem from './components/profile/ProfileMediaItem'
 
 export default class Profile extends Component {
   render() {
@@ -50,24 +52,12 @@ export default class Profile extends Component {
                 <div className='profile-tab'>SAVED</div>
               </div>
               <div className='profile-media'>
-                <div className='profile-media-item'>
-                  <img src={media1} alt='' />
-                </div>
-                <div className='profile-media-item'>
-                  <img src={media2} alt='' />
-                </div>
-                <div className='profile-media-item'>
-                  <img src={media3} alt='' />
-                </div>
-                <div className='profile-media-item'>
-                  <img src={media2} alt='' />
-                </div>
-                <div className='profile-media-item'>
-                  <img src={media3} alt='' />
-                </div>
-                <div className='profile-media-item'>
-                  <img src={media1} alt='' />
-                </div>
+                <ProfileMediaItem preview={media1} />
+                <ProfileMediaItem preview={media2} />
+                <ProfileMediaItem preview={media3} />
+                <ProfileMediaItem preview={media2} />
+                <ProfileMediaItem preview={media3} />
+                <ProfileMediaItem preview={media1} />
               </div>
             </div>
             <FooterLarge />

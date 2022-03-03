@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import './assets/css/signup.css'
 
 import logo from './assets/images/logo.png'
-import fb_icon from './assets/images/fb-icon.png'
-import signupPhone from './assets/images/signup.png'
 
 export default function SignUp() {
   return (
@@ -15,14 +13,17 @@ export default function SignUp() {
           <div className='form-container'>
             <form>
               <img src={logo} alt='' />
-              <div>Login Successful</div>
+              <h4 className='color-blue-dark'>Login Successful</h4>
             </form>
           </div>
-          <div className='suggest-app-container'>
-            <h5>
+          <div>
+            <p>
               If you're not redirected to the homepage, click{' '}
-              <Link to='/'>here</Link>.
-            </h5>
+              <Link className='color-blue' to='/'>
+                here
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </div>

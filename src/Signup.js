@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import './assets/css/signup.css'
 
 import logo from './assets/images/logo.png'
-import fb_icon from './assets/images/fb-icon.png'
-import signupPhone from './assets/images/signup.png'
 
 export default function Signup() {
   return (
