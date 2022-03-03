@@ -1,0 +1,116 @@
+.profile-page-container {
+  width: 100%;
+  align-items: center !important;
+}
+
+.profile-top {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px 60px 40px;
+  gap: 70px;
+}
+
+.profile-photo {
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #969696;
+  text-align: center;
+}
+
+.pp-large {
+  height: 150px;
+  width: 150px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-info-top,
+.profile-info-middle {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-info-top h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.profile-info-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-bottom {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 70px;
+  border-top: 1px solid var(--grey-219);
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 40px;
+}
+
+.profile-tab {
+  border-top: 1.5px solid var(--grey-219);
+  padding: 15px 0;
+  color: rgb(116, 116, 116);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-tab-active {
+  color: black;
+  border-top: 1.5px solid #333;
+}
+
+.profile-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.profile-media-item {
+  height: 300px;
+  width: 300px;
+}
+
+.profile-media-item img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .profile-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .profile-info-top {
+    justify-content: center;
+  }
+
+  .profile-info-bottom {
+    align-items: center;
+  }
+}

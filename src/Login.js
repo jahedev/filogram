@@ -8,7 +8,7 @@ import logo from './assets/images/logo.png'
 import fb_icon from './assets/images/fb-icon.png'
 import signupPhone from './assets/images/signup.png'
 
-export default function SignUp() {
+export default function Login() {
   return (
     <div className='signup-container'>
       <div className='signup-main-container'>

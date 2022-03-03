@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Login from './Login'
 import LoginSuccess from './LoginSuccess'
+import Profile from './Profile'
 import Home from './Home'
-import SignUp from './SignUp'
+import Signup from './Signup'
 
 export default class App extends Component {
   render() {
@@ -14,7 +15,8 @@ export default class App extends Component {
           <Routes>
             <Route path='/login' element={<Login />} />
             <Route path='/login-success' element={<LoginSuccess />} />
-            <Route path='/signup' element={<SignUp />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/signup' element={<Signup />} />
             <Route path='/' element={<Home />} />
           </Routes>
         </div>

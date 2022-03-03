@@ -52,3 +52,15 @@ header .center-middle {
   margin-right: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  header .center-middle {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    display: none;
+  }
+}
