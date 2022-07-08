@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   HomeOutlined,
@@ -12,23 +12,11 @@ import {
   HeartFilled,
   ProfileOutlined,
   ProfileFilled,
-} from '@ant-design/icons'
+} from '@ant-design/icons';
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
 
-// Some icons are outlines, others are filled
-// the default is outline, unless specified by props.filled
-const filled = {
-  home: false,
-  message: false,
-  compass: false,
-  heart: false,
-  profile: false,
-}
-
-export default function Header(props) {
-  Object.assign(filled, props.filled)
-
+export default function Header({ filled }) {
   return (
     <header>
       <div className='center-middle'>
@@ -41,18 +29,26 @@ export default function Header(props) {
           <input autocapitalize='none' placeholder='Search' type='text' />
         </div>
         <div className='header-icons'>
-          <div className='header-icon'>
-            {filled.home ? <HomeFilled /> : <HomeOutlined />}
-          </div>
-          <div className='header-icon'>
-            {filled.message ? <MessageFilled /> : <MessageOutlined />}
-          </div>
-          <div className='header-icon'>
-            {filled.compass ? <CompassFilled /> : <CompassOutlined />}
-          </div>
-          <div className='header-icon'>
-            {filled.heart ? <HeartFilled /> : <HeartOutlined />}
-          </div>
+          <Link to='/'>
+            <div className='header-icon'>
+              {filled.home ? <HomeFilled /> : <HomeOutlined />}
+            </div>
+          </Link>
+          <Link to='/login'>
+            <div className='header-icon'>
+              {filled.message ? <MessageFilled /> : <MessageOutlined />}
+            </div>
+          </Link>
+          <Link to='/signup'>
+            <div className='header-icon'>
+              {filled.compass ? <CompassFilled /> : <CompassOutlined />}
+            </div>
+          </Link>
+          <Link to='/login-success'>
+            <div className='header-icon'>
+              {filled.heart ? <HeartFilled /> : <HeartOutlined />}
+            </div>
+          </Link>
           <Link to='/profile'>
             <div className='header-icon'>
               {filled.profile ? <ProfileFilled /> : <ProfileOutlined />}
@@ -61,5 +57,5 @@ export default function Header(props) {
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -12,10 +12,11 @@ export default function LoginSuccess() {
           <div className='form-container'>
             <form>
               <img src={logo} alt='' />
-              <h4 className='color-blue-dark'>Login Successful</h4>
+              <h3>Login Successful</h3>
             </form>
           </div>
           <div>
+            <br />
             <p>
               If you're not redirected to the homepage, click{' '}
               <Link className='color-blue' to='/'>
