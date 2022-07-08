@@ -1,15 +1,16 @@
+import { Link } from 'react-router-dom';
+
 import {
-  MessageOutlined,
-  MessageFilled,
   HeartOutlined,
-  HeartFilled,
-  MoreOutlined,
   MailOutlined,
-  MailFilled,
-  SaveOutlined,
-  SaveFilled,
+  MessageOutlined,
+  MoreOutlined,
   SmileOutlined,
-  SmileFilled,
+  SaveOutlined,
+  // MessageFilled,
+  // HeartFilled,
+  // MailFilled,
+  // SaveFilled,
 } from '@ant-design/icons';
 
 import postImg from '../../assets/images/post.jpg';
@@ -27,7 +28,7 @@ export default function Posts() {
               </div>
             </div>
             <div className='profile-link'>
-              <a href='#'>jahedev</a>
+              <Link to='#'>jahedev</Link>
             </div>
           </div>
           <div className='post-header-right'>
@@ -100,9 +101,9 @@ export default function Posts() {
           </div>
           <div className='post-comment-field-right'>
             <div className='post-comment-btn-div'>
-              <a href='#' className='blue-btn'>
+              <Link to='#' className='blue-btn'>
                 Post
-              </a>
+              </Link>
             </div>
           </div>
         </div>

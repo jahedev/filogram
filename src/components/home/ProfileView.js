@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ProfileView(props) {
   return (
     <div className='profile-view'>
@@ -15,7 +17,7 @@ export default function ProfileView(props) {
         </div>
         <div className='user-profile-info'>
           <div className='user-profile-username'>
-            <a href='#'>{props.username}</a>
+            <Link to='#'>{props.username}</Link>
           </div>
           <div
             className={
@@ -26,9 +28,9 @@ export default function ProfileView(props) {
         </div>
       </div>
       <div className='profile-view-right'>
-        <a href='#' className='blue-btn'>
+        <Link to='#' className='blue-btn'>
           {props.actionText}
-        </a>
+        </Link>
       </div>
     </div>
   );

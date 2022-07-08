@@ -75,18 +75,14 @@ export default class Login extends React.Component {
                   <h6>
                     <span>OR</span>
                   </h6>
-                  <a
-                    className='.facebook-login-link'
-                    href='javascript:void(0);'>
+                  <Link className='facebook-login-link' to='/signup'>
                     <img src={fb_icon} alt='' />
                     Log in with Facebook
-                  </a>
+                  </Link>
                   <br />
-                  <a
-                    className='.forgot-password-link'
-                    href='javascript:void(0);'>
+                  <Link className='forgot-password-link' to='/signup'>
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>

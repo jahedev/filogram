@@ -1,41 +1,42 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function FooterLinks() {
   return (
     <>
       <div className='nav-link'>
-        <a href='#'>About</a>
+        <Link to='#'>About</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Help</a>
+        <Link to='#'>Help</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Press</a>
+        <Link to='#'>Press</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>API</a>
+        <Link to='#'>API</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Jobs</a>
+        <Link to='#'>Jobs</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Privacy</a>
+        <Link to='#'>Privacy</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Terms</a>
+        <Link to='#'>Terms</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Locations</a>
+        <Link to='#'>Locations</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Top Accounts</a>
+        <Link to='#'>Top Accounts</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Hashtags</a>
+        <Link to='#'>Hashtags</Link>
       </div>
       <div className='nav-link'>
-        <a href='#'>Language</a>
+        <Link to='#'>Language</Link>
       </div>
     </>
-  )
+  );
 }

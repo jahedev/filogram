@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import profile from '../../assets/images/profile.jpg';
 import ProfileView from './ProfileView';
 
@@ -9,7 +10,7 @@ export default function Suggestions(props) {
           <span>Suggestions For You</span>
         </div>
         <div className='follow-suggestions-all'>
-          <a href='#'>See All</a>
+          <Link to='#'>See All</Link>
         </div>
       </div>
       <div className='follow-suggestion-item'>
