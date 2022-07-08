@@ -21,7 +21,7 @@ The repo for the backend can be found [here](https://github.com/jahedev/filogram
 
 ### What Needs to be Done:
 
-- [ ] User Authentication
+- [~] User Authentication
 - [ ] Upload and Posting Media
 - [ ] User Following
 - [ ] Profile Management

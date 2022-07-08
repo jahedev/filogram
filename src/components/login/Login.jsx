@@ -1,14 +1,38 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
-import './assets/css/signup.css'
+import '../../assets/css/signup.css';
 
-import logo from './assets/images/logo.png'
-import fb_icon from './assets/images/fb-icon.png'
-import signupPhone from './assets/images/signup.png'
+import axios from 'axios';
+import fb_icon from '../../assets/images/fb-icon.png';
+import logo from '../../assets/images/logo.png';
+import signupPhone from '../../assets/images/signup.png';
 
 export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+    axios
+      .post('http://localhost:4000/api/users/login', { email, password })
+      .then((res) => {
+        console.log(res);
+        if (res.data.success) {
+          localStorage.setItem('JWT', res.data.token);
+          this.props.history.push('/login-success');
+        } else {
+          alert('Invalid Credentials');
+        }
+      });
+  };
+
+  const handleChange = (setState, e) => {
+    setState(e.target.value);
+  };
+
   return (
     <div className='signup-container'>
       <div className='signup-main-container'>
@@ -24,27 +48,31 @@ export default function Login() {
                 name='email'
                 placeholder='Phone number, username, or email'
                 className='signup-input'
+                onChange={(e) => handleChange(setEmail, e)}
               />
               <input
                 type='password'
                 name='password'
                 placeholder='password'
                 className='signup-input'
+                onChange={(e) => handleChange(setPassword, e)}
               />
               <br />
-              <button type='submit'>Log In</button>
+              <button onClick={handleLogin} type='submit'>
+                Log In
+              </button>
               <div className='signup-with-facebook'>
                 <h6>
                   <span>OR</span>
                 </h6>
-                <a className='.facebook-login-link' href='javascript:void(0);'>
+                <Link className='facebook-login-link' to='/signup'>
                   <img src={fb_icon} alt='' />
                   Log in with Facebook
-                </a>
+                </Link>
                 <br />
-                <a className='.forgot-password-link' href='javascript:void(0);'>
+                <Link className='forgot-password-link' to='/signup'>
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </form>
           </div>
@@ -57,5 +85,5 @@ export default function Login() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,11 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import './assets/css/signup.css'
+import '../../assets/css/signup.css';
 
-import logo from './assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
 
-export default function SignUp() {
+export default function LoginSuccess() {
   return (
     <div className='signup-container'>
       <div className='signup-main-container'>
@@ -13,10 +12,11 @@ export default function SignUp() {
           <div className='form-container'>
             <form>
               <img src={logo} alt='' />
-              <h4 className='color-blue-dark'>Login Successful</h4>
+              <h3>Login Successful</h3>
             </form>
           </div>
           <div>
+            <br />
             <p>
               If you're not redirected to the homepage, click{' '}
               <Link className='color-blue' to='/'>
@@ -28,5 +28,5 @@ export default function SignUp() {
         </div>
       </div>
     </div>
-  )
+  );
 }

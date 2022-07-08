@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Story(props) {
   return (
     <div className='story-profile'>
@@ -12,5 +10,5 @@ export default function Story(props) {
         <span>{props.username}</span>
       </div>
     </div>
-  )
+  );
 }
