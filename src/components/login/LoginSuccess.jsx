@@ -4,7 +4,7 @@ import '../../assets/css/signup.css';
 
 import logo from '../../assets/images/logo.png';
 
-export default function SignUp() {
+export default function LoginSuccess() {
   return (
     <div className='signup-container'>
       <div className='signup-main-container'>
