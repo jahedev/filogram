@@ -1,7 +1,5 @@
-import React from 'react'
-
-import profile from '../../assets/images/profile.jpg'
-import ProfileView from './ProfileView'
+import profile from '../../assets/images/profile.jpg';
+import ProfileView from './ProfileView';
 
 export default function Suggestions(props) {
   return (
@@ -37,5 +35,5 @@ export default function Suggestions(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import { Component } from 'react';
 
-import Header from './components/base/Header'
-import Stories from './components/home/Stories'
-import Posts from './components/home/Posts'
+import Header from '../base/Header';
+import Posts from './Posts';
+import Stories from './Stories';
 
-import profile from './assets/images/profile.jpg'
-import ProfileView from './components/home/ProfileView'
-import FollowSuggestions from './components/home/FollowSuggestions'
-import Footer from './components/base/Footer'
+import profile from '../../assets/images/profile.jpg';
+import Footer from '../base/Footer';
+import FollowSuggestions from './FollowSuggestions';
+import ProfileView from './ProfileView';
 
 export default class Home extends Component {
   render() {
@@ -35,6 +35,6 @@ export default class Home extends Component {
           </div>
         </main>
       </div>
-    )
+    );
   }
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   MessageOutlined,
   MessageFilled,
@@ -12,10 +10,10 @@ import {
   SaveFilled,
   SmileOutlined,
   SmileFilled,
-} from '@ant-design/icons'
+} from '@ant-design/icons';
 
-import profile4 from '../../assets/images/profile4.jpg'
-import postImg from '../../assets/images/post.jpg'
+import postImg from '../../assets/images/post.jpg';
+import profile4 from '../../assets/images/profile4.jpg';
 
 export default function Posts() {
   return (
@@ -110,5 +108,5 @@ export default function Posts() {
         </div>
       </div>
     </div>
-  )
+  );
 }

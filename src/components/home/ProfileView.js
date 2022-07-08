@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function ProfileView(props) {
   return (
     <div className='profile-view'>
@@ -33,5 +31,5 @@ export default function ProfileView(props) {
         </a>
       </div>
     </div>
-  )
+  );
 }

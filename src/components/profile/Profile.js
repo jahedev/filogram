@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Header from './components/base/Header'
-import FooterLarge from './components/base/FooterLarge'
+import FooterLarge from '../base/FooterLarge';
+import Header from '../base/Header';
 
 // I am using dummy static images for now
-import profile from './assets/images/profile5.jpg'
-import media1 from './assets/images/media1.jpg'
-import media2 from './assets/images/media2.jpg'
-import media3 from './assets/images/media3.jpg'
-import ProfileMediaItem from './components/profile/ProfileMediaItem'
+import media1 from '../../assets/images/media1.jpg';
+import media2 from '../../assets/images/media2.jpg';
+import media3 from '../../assets/images/media3.jpg';
+import profile from '../../assets/images/profile5.jpg';
+import ProfileMediaItem from './ProfileMediaItem';
 
 export default class Profile extends Component {
   render() {
@@ -64,6 +64,6 @@ export default class Profile extends Component {
           </div>
         </main>
       </div>
-    )
+    );
   }
 }

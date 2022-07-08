@@ -1,46 +1,46 @@
-import React from 'react'
+import React from 'react';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import './assets/css/signup.css'
+import '../../assets/css/signup.css';
 
-import logo from './assets/images/logo.png'
-import fb_icon from './assets/images/fb-icon.png'
-import signupPhone from './assets/images/signup.png'
-import axios from 'axios'
+import axios from 'axios';
+import fb_icon from '../../assets/images/fb-icon.png';
+import logo from '../../assets/images/logo.png';
+import signupPhone from '../../assets/images/signup.png';
 
 export default class Login extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       email: '',
       password: '',
-    }
-    this.handleLogin = this.handleLogin.bind(this)
-    this.handleChange = this.handleChange.bind(this)
+    };
+    this.handleLogin = this.handleLogin.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleLogin = (e) => {
-    e.preventDefault()
-    console.log(this.state)
+    e.preventDefault();
+    console.log(this.state);
     axios
       .post('http://localhost:4000/api/users/login', this.state)
       .then((res) => {
-        console.log(res)
+        console.log(res);
         if (res.data.success) {
-          localStorage.setItem('token', res.data.token)
-          this.props.history.push('/login-success')
+          localStorage.setItem('token', res.data.token);
+          this.props.history.push('/login-success');
         } else {
-          alert('Invalid Credentials')
+          alert('Invalid Credentials');
         }
-      })
-  }
+      });
+  };
 
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -99,6 +99,6 @@ export default class Login extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

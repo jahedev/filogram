@@ -1,9 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import './assets/css/signup.css'
+import '../../assets/css/signup.css';
 
-import logo from './assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
 
 export default function SignUp() {
   return (
@@ -28,5 +27,5 @@ export default function SignUp() {
         </div>
       </div>
     </div>
-  )
+  );
 }
