@@ -22,7 +22,7 @@ The repo for the backend can be found [here](https://github.com/jahedev/filogram
 
 ### What Needs to be Done:
 
-- [~] Upload and Posting Media
+- [~] Upload and Posting Media (AWS-S3)
 - [ ] User Following
 - [ ] Likes and Commenting
 - [ ] Profile Management
