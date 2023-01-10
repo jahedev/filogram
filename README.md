@@ -19,18 +19,22 @@ The repo for the backend can be found [here](https://github.com/jahedev/filogram
 - [x] Login Page UI
 - [x] Database & ORM Setup
 - [x] User Authentication
+- [x] Upload and Post Photos (AWS-S3)
+- [x] User Following
+- [x] Likes and Commenting
+- [x] Profile Management
 
 ### What Needs to be Done:
-
-- [~] Upload and Posting Media (AWS-S3)
-- [ ] User Following
-- [ ] Likes and Commenting
-- [ ] Profile Management
 - [ ] Direct Messaging
+- [ ] Post Videos ?
 
 <br />
 
-# Screenshots
+# Database Design Document (Postgres)
+
+![Database Design Document](https://i.imgur.com/LW6pqVw.png)
+
+# Screenshots of Website
 
 localhost:3000
 
