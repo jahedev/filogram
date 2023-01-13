@@ -1,3 +1,4 @@
+import React from "react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './components/home/Home';
@@ -6,7 +7,7 @@ import LoginSuccess from './components/login/LoginSuccess';
 import Signup from './components/login/Signup';
 import Profile from './components/profile/Profile';
 
-export default function App() {
+function App() {
   return (
     <Router>
       <div>
@@ -21,3 +22,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;
