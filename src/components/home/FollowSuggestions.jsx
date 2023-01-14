@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import profile from '../../assets/images/profile.jpg';
 import FollowSuggestion from './FollowSuggestion';
 import ProfileView from './ProfileView';
+import React from "react"
 
-export default function Suggestions(props) {
+
+export default function Suggestions({profile}) {
   return (
     <div className='follow-suggestions'>
       <div className='follow-suggestions-top'>

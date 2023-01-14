@@ -2,6 +2,8 @@ import postImg from '../../assets/images/post.jpg';
 import profile4 from '../../assets/images/profile4.jpg';
 
 import { Link } from 'react-router-dom';
+import React from "react"
+
 
 import {
   HeartOutlined,

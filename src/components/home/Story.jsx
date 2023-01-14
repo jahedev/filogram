@@ -1,4 +1,6 @@
-export default function Story(props) {
+import React from "react";
+
+function Story(props) {
   return (
     <div className='story-profile'>
       <div className='profile-outer-circle'>
@@ -12,3 +14,5 @@ export default function Story(props) {
     </div>
   );
 }
+
+export default Story

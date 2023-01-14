@@ -1,9 +1,5 @@
-import Post from './Post';
+import React from "react"
 
-export default function Posts() {
-  return (
-    <div className='posts-container'>
-      <Post />
-    </div>
-  );
+export default function Posts({ children }) {
+  return <div className="posts-container">{children}</div>
 }
